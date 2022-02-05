@@ -1,9 +1,11 @@
 {
   "name": "clean_ts_rollup_react_build",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An example of building a clean React / Typescript / Rollup build from scratch",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf -f build && mkdir build",
+    "typescript": "tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/StoneCypher/clean_ts_rollup_react_build/issues"
   },
-  "homepage": "https://github.com/StoneCypher/clean_ts_rollup_react_build#readme"
+  "homepage": "https://github.com/StoneCypher/clean_ts_rollup_react_build#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  }
 }
