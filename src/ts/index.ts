@@ -1,4 +1,10 @@
 
+import { this_too } from './other_file';
+
+
+
+
+
 function bootstrap() {
   console.log('bootstrapped!');
 }
@@ -7,4 +13,4 @@ function bootstrap() {
 
 
 
-export { bootstrap };
+export { bootstrap, this_too };
