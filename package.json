@@ -1,0 +1,19 @@
+{
+  "name": "clean_ts_rollup_react_build",
+  "version": "0.1.0",
+  "description": "An example of building a clean React / Typescript / Rollup build from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/clean_ts_rollup_react_build.git"
+  },
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/clean_ts_rollup_react_build/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/clean_ts_rollup_react_build#readme"
+}
