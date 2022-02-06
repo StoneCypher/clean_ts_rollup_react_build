@@ -1,11 +1,13 @@
 
-import { this_too } from './other_file';
+import { this_too }  from './other_file';
+import { re_render } from './ui';
 
 
 
 
 
 function bootstrap() {
+  re_render({ name: 'Joe' });
   console.log('bootstrapped!');
 }
 
