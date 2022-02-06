@@ -1,6 +1,6 @@
 {
   "name": "clean_ts_rollup_react_build",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "An example of building a clean React / Typescript / Rollup build from scratch",
   "main": "index.js",
   "scripts": {
