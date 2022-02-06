@@ -1,14 +1,15 @@
 {
   "name": "clean_ts_rollup_react_build",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "An example of building a clean React / Typescript / Rollup build from scratch",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf -f build && mkdir build && cd build && mkdir terser && cd ..",
+    "clean": "rimraf -f docs && mkdir docs && rimraf -f build && mkdir build && cd build && mkdir terser && cd ..",
+    "site": "cp ./src/html/* ./docs && cp ./build/terser/index.iife.js ./docs && cp ./src/html/.nojekyll ./docs",
     "rollup": "rollup -c",
     "typescript": "tsc --build tsconfig.json",
     "terser": "terser -o ./build/terser/index.iife.js ./build/rollup/index.iife.js",
-    "build": "npm run clean && npm run typescript && npm run rollup && npm run terser",
+    "build": "npm run clean && npm run typescript && npm run rollup && npm run terser && npm run site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
